@@ -22,6 +22,7 @@ public class BasicCoreJavaPrograms {
         float tailPercentage = tail * 100 / num;
         System.out.println("The Percentage of tail is " + tailPercentage + "%");
         System.out.println("The Percentage of head is " + headPercentage + "%");
+        System.out.println("===================");
 
         //Leap Year
         System.out.println("Enter the year");
@@ -31,6 +32,8 @@ public class BasicCoreJavaPrograms {
         } else {
             System.out.println(+year + " is not a leap year");
         }
+        System.out.println("===================");
+
         //power of 2
         System.out.println("Enter the power value");
         int N = sc.nextInt();
@@ -39,6 +42,7 @@ public class BasicCoreJavaPrograms {
             powerOfTwo = (int) Math.pow(2, i);
             System.out.println(i + "th power of 2 is " + powerOfTwo);
         }
+        System.out.println("===================");
 
         // Harmonic Number
         System.out.println("Enter the number whose harmonic number you want");
@@ -46,8 +50,23 @@ public class BasicCoreJavaPrograms {
         double result = 0.0;
         int i;
         for (i = 1; i < number; i++) {
-            result = result + (double)1 / i;
+            result = result + (double) 1 / i;
         }
         System.out.println("The harmonic number of " + i + " is " + result);
+        System.out.println("===================");
+
+        // Factors
+        System.out.println("Enter the number whose prime factors you want");
+        int factNumber = sc.nextInt();
+        int primeFactorial = 2;
+        while (factNumber > 1) {
+            if (factNumber % primeFactorial == 0) {
+                System.out.println(primeFactorial);
+                factNumber = factNumber / primeFactorial;
+            } else {
+                primeFactorial++;
+            }
+        }
+        System.out.println("===================");
     }
 }
