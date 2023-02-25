@@ -39,5 +39,15 @@ public class BasicCoreJavaPrograms {
             powerOfTwo = (int) Math.pow(2, i);
             System.out.println(i + "th power of 2 is " + powerOfTwo);
         }
+
+        // Harmonic Number
+        System.out.println("Enter the number whose harmonic number you want");
+        int number = sc.nextInt();
+        double result = 0.0;
+        int i;
+        for (i = 1; i < number; i++) {
+            result = result + (double)1 / i;
+        }
+        System.out.println("The harmonic number of " + i + " is " + result);
     }
 }
