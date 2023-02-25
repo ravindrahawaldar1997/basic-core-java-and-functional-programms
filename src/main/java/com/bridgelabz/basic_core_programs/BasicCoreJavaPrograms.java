@@ -24,12 +24,20 @@ public class BasicCoreJavaPrograms {
         System.out.println("The Percentage of head is " + headPercentage + "%");
 
         //Leap Year
-        System.out.println("Enter the year" );
+        System.out.println("Enter the year");
         int year = sc.nextInt();
-        if(year % 4 == 0 || year % 400 == 0 && year % 100 != 0){
-            System.out.println(+ year + " is a leap year");
-        }else{
+        if (year % 4 == 0 || year % 400 == 0 && year % 100 != 0) {
+            System.out.println(+year + " is a leap year");
+        } else {
             System.out.println(+year + " is not a leap year");
+        }
+        //power of 2
+        System.out.println("Enter the power value");
+        int N = sc.nextInt();
+        int powerOfTwo;
+        for (int i = 1; i <= N; i++) {
+            powerOfTwo = (int) Math.pow(2, i);
+            System.out.println(i + "th power of 2 is " + powerOfTwo);
         }
     }
 }
