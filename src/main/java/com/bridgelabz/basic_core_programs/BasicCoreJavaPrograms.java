@@ -90,9 +90,19 @@ public class BasicCoreJavaPrograms {
         int temp = 0;
         System.out.println("Numbers before swapping " + firstNumber + " " + secondNumber);
         temp = firstNumber;
-        secondNumber = firstNumber;
+        firstNumber = secondNumber;
         secondNumber = temp;
         System.out.println("Numbers after swapping " + firstNumber + " " + secondNumber);
+        System.out.println("===================");
+
+        //Even or odd
+        System.out.println("Enter the number to check even or odd");
+        int evenOrOdd = sc.nextInt();
+        if (evenOrOdd % 2 == 0) {
+            System.out.println(evenOrOdd + " is even number ");
+        } else {
+            System.out.println(evenOrOdd + " is odd number");
+        }
         System.out.println("===================");
     }
 }
