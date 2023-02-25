@@ -104,5 +104,29 @@ public class BasicCoreJavaPrograms {
             System.out.println(evenOrOdd + " is odd number");
         }
         System.out.println("===================");
+
+        System.out.println("Enter a character a to z");
+        char alphabet = sc.next().charAt(0);
+        switch (alphabet) {
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U':
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                System.out.println(+alphabet + " ia a vowel");
+                break;
+            default:
+                if ((alphabet >= 'a' && alphabet <= 'z') || (alphabet >= 'A' && alphabet <= 'Z')) {
+                    System.out.println(alphabet + " is a consonant");
+                } else {
+                    System.out.println("please enter the alphabet");
+                }
+        }
     }
 }
+
