@@ -68,5 +68,18 @@ public class BasicCoreJavaPrograms {
             }
         }
         System.out.println("===================");
+
+        //Quotient and Remainder
+
+        System.out.println("Enter the value of dividend");
+        int dividend = sc.nextInt();
+        System.out.println("Enter the value of divisor");
+        int divisor = sc.nextInt();
+        int quotient = dividend / divisor;
+        int reminder = dividend % divisor;
+
+        System.out.println("The quotient is " +quotient);
+        System.out.println("The reminder is " +reminder);
+        System.out.println("===================");
     }
 }
