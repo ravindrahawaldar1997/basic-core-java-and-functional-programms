@@ -78,8 +78,21 @@ public class BasicCoreJavaPrograms {
         int quotient = dividend / divisor;
         int reminder = dividend % divisor;
 
-        System.out.println("The quotient is " +quotient);
-        System.out.println("The reminder is " +reminder);
+        System.out.println("The quotient is " + quotient);
+        System.out.println("The reminder is " + reminder);
+        System.out.println("===================");
+
+        //swap two numbers
+        System.out.println("Enter the first number");
+        int firstNumber = sc.nextInt();
+        System.out.println("Enter the second number");
+        int secondNumber = sc.nextInt();
+        int temp = 0;
+        System.out.println("Numbers before swapping " + firstNumber + " " + secondNumber);
+        temp = firstNumber;
+        secondNumber = firstNumber;
+        secondNumber = temp;
+        System.out.println("Numbers after swapping " + firstNumber + " " + secondNumber);
         System.out.println("===================");
     }
 }
